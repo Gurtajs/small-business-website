@@ -80,7 +80,7 @@ const Form = () => {
       <textarea className='message-input' name="message" value={formData.message} onChange={handleChange}/>
     </div>
     <p className='submit-errors'>{formErrors && formErrors.message}</p>
-      <input className='submit-input' type="submit" value="Send" />
+      <input className='submit-input' type="submit" value="Submit" />
     </form>}
     {isSubmitted && !showForm && <p className='submit-message'>Your message has been sent! Thanks for taking the time to contact us.</p>}
     </div>

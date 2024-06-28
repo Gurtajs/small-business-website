@@ -4,6 +4,8 @@ import Header from './Header'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import {ReactComponent as Logo} from '../assets/Just-Eat-logo.svg'
+import {ReactComponent as GoogleLogo} from '../assets/google-logo.svg'
 
 const Home = () => {
   
@@ -47,24 +49,23 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='content'>
-        <h1 className='home-title'>Sea-riously good fish and famous battered chips fried to perfection, served with love since 1999</h1>
+        <h1 className='home-title'>Sea-riously good fish and famous battered chips fried to perfection and served with love since 1999</h1>
       </div>
       <div className='reviews-container'>
         <div className='reviews-content'>  
-          <h2 className='title-reviews'>Reviews</h2> 
+          <div className='title-reviews'>What our customers say about us</div> 
     
     <Slider {...settings}>
-      
-          <div className="item">1</div>
-          <div className="item" data-value="2">2</div>
-          <div className="item" data-value="3">3</div>
-          <div className="item" data-value="4">4</div>
-          <div className="item" data-value="5">5</div>
-          <div className="item" data-value="5">6</div>
+          
+          <div className="item">"Fantastic service, great food and a friendly delivery driver. What more can you ask for? Thank you 😊" <div className='Jlogo-reviews'><Logo/></div></div>
+          <div className="item">Spotless food is lovely best chips in the area and good price too<div className='Glogo-reviews2'><GoogleLogo/></div></div>
+          <div className="item">"First time trying, definitely will be using again, fish and chips are brilliant and also the double cheese burger, definitely recommend 👌"<div className='Jlogo-reviews3'><Logo/></div></div>
+          <div className="item">"Cannot fault this service. Best Chip shop in West Midlands"<div className='Jlogo-reviews4'><Logo/></div></div>
+          <div className="item">"Yet another quality meal cooked to perfection best fish and chips in the area"<div className='Glogo-reviews5'><GoogleLogo/></div></div>
+          <div className="item">"Brilliant prices, lovely staff and mostly importantly amazing food! Would definitely recommend it!"<div className='Jlogo-reviews'><Logo/></div></div>
+          
          
     </Slider>
-
-
 
 
           <div className='nav-reviews'>

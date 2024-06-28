@@ -1,9 +1,21 @@
 import React from 'react'
+import Book from './Book'
 
 const OurFood = () => {
+
+
+
   return (
-    <div className='food-body'>
-      <h1>Menu</h1>
+    <div className='food-container'>
+      <h1 className='menu-title'>Specialties</h1>
+      {/* <div>Battered chips</div>   
+      <div>Cod</div>
+      <div>Kebab wrap</div> */}
+      <Book/>
+
+      
+
+      
     </div>
   )
 }
